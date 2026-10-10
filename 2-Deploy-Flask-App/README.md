@@ -72,7 +72,9 @@ curl.exe http://127.0.0.1:57561
 
 **2. Deployment, pod, and logs:**
 
-![kubectl deploy & logs](./deploy-output.png)(./deploy-output2.png)
+![kubectl deploy output](./deploy-output.png)
+
+![kubectl logs output](./deploy-output2.png)
 
 **3. Accessing the Flask app — success:**
 
