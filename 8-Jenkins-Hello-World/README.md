@@ -10,7 +10,7 @@ To create and execute a Freestyle Jenkins job that retrieves a shell script from
 - Docker
 
 ## GitHub Repository
-Repository: [Devops](https://github.com/Pranamya-11/Devops)
+Repository: [Devops](https://github.com/Alvina-06/dev.git)
 
 The repository contains the `hello-world.sh` script:
 
