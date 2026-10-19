@@ -83,13 +83,13 @@ The Jenkins pipeline consists of the following four stages:
 
 The following screenshot shows the stages of the Jenkins pipeline and their execution status.
 
-![Jenkins Pipeline Stage View](./Screenshots/pipeline-stages.png)
+![Jenkins Pipeline Stage View](/pipeline-stages.png)
 
 ### Console Output
 
 The console output confirms successful pipeline execution.
 
-![Jenkins Pipeline Console Output](./Screenshots/console-output.png)
+![Jenkins Pipeline Console Output](/console-output.png)
 
 ## 8. Expected Output
 
