@@ -1,0 +1,48 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Source code checked out from GitHub.'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Verifying application files...'
+                sh '''
+                    test -f app.py
+                    test -f requirements.txt
+                '''
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Verifying test file...'
+                sh 'test -f test_app.py'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Preparing deployment directory...'
+                sh '''
+                    mkdir -p python-app-deploy
+                    cp app.py requirements.txt python-app-deploy/
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed. Check the console output.'
+        }
+    }
+}
