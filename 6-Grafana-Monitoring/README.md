@@ -199,7 +199,7 @@ Docker Compose defines and runs the delivery application and monitoring services
 
 ## Cleanup
 
-When you have finished taking screenshots, stop the services:
+To stop the services:
 
 ```powershell
 docker compose down
